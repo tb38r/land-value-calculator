@@ -20,9 +20,12 @@
 
 input{
   background-color: white;
-  border-radius: 5px;
+  border-radius: 25px;
+  height: 18px;
   color: black;
-  width: 20%;
+  width: 50px;
+  text-align: center;
+  border-color: transparent;
 }
 .main-container{
   width: 40%;
@@ -45,8 +48,18 @@ input{
 
 
 .submit-button{
-  background-color: blue;
+  background-color: black;
   color: white;
+  width: 99%;
+  height: 50px;
+  border-radius: 20px;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;
+padding: 6px;
+
 }
 
 
@@ -65,12 +78,11 @@ input{
   
   .container-title{
       color: white;
-      padding-bottom: 5px;
+      padding: 10px;
       text-transform: capitalize;
       font-weight: 900;
       text-decoration: underline;
       font-size: 20px;
-      
   }
 
 
@@ -89,70 +101,7 @@ input{
 
 .inner-legend{
   color: lightgray;
-
-}
-
-
-
-
-
-/* .carousel-item {
-  background-color: blue;
-  height: 400px;
-  padding: 15px;
-  height: fit-content;
-}
-
-.carousel-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-
-
-.carousel-title {
-  color: white;
-  font-size: 26px;
-  font-weight: 800;
-  padding-bottom: 20px;
-  text-decoration: underline;
-}
-
-.question-legend{
-  padding-bottom: 10px;
-  color: lightgray;
-  font-style: italic;
-
-}
-
-.carousel-question {
+  padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 16px;
-  font-weight: 500;
 }
 
-.carousel-questions-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 8px;
-}
-
-input {
-  width: 100px;
-  height: 35px;
-  border-radius: 20px;
-  border-color: blue;
-  color: black;
-  text-align: center
-
-}
-
-
-.error-message{
-  color: red;
-  font-size: 14px;
-  display: none;
-} */
