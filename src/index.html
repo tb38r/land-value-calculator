@@ -1,254 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./assets/index.css">
-  <title>W22 Land Value Calculator</title>
-</head>
-<body>
-  <form id="myForm"  >
-    <div id="root">
-      <div class="main-container">
-        
-        <div class="container-outer">
-          <div class="container-title">Units and Acres</div>
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="residential-units">Enter total number of residential units?</label>
-              <div class="inner-legend">(#)</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <title>W22 Land Value Calculator</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <div id="root">
+        <div class="main-container">
+          <div class="container-outer">
+            <div class="container-title">Units and Acres</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter total number of residential units?
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="total number of residential units?" class="input-response" />
             </div>
-            <input type="number" id="residential-units" name="residential-units" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-units">Enter percentage of affordable units?</label>
-              <div class="inner-legend">(%)</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter percentage of affordable units?
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name="percentage of affordable units?" class="input-response" />
             </div>
-            <input type="number" id="affordable-units" name="affordable-units" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-flats">What percentage of market units are flats?</label>
-              <div class="inner-legend">(%)</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                What percentage of market units are flats?
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name=" percentage of market units are flats?" class="input-response" />
             </div>
-            <input type="number" id="market-flats" name="market-flats" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="net-developable-acres">Enter the total number of Net Developable Acres</label>
-              <div class="inner-legend">(#)</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter the total number of Net Developable Acres
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="Net Developable Acres" class="input-response" />
             </div>
-            <input type="number" id="net-developable-acres" name="net-developable-acres" class="input-response">
           </div>
+          <div class="container-outer">
+            <div class="container-title">Unit Sizes and Coverage</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average size (NIA) Sq Ft for MARKET Houses
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average size (NIA) Sq Ft for MARKET Houses" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average size (NIA) Sq Ft for MARKET Flats
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average size (NIA) Sq Ft for MARKET Flats" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average size (NIA) Sq Ft for AFFORDABLE Houses
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average size (NIA) Sq Ft for AFFORDABLE Houses" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average size (NIA) Sq Ft for AFFORDABLE Flats
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average size (NIA) Sq Ft for AFFORDABLE Flats" class="input-response" />
+            </div>
+          </div>
+          <div class="container-outer">
+            <div class="container-title">Estimated Sales Values</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average sales price per Sq.Ft for Houses
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average sales price per Sq.Ft for Houses" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average sales price per Sq.Ft for Flats
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average sales price per Sq.Ft for Flats" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter affordable discount to market value percentage for houses
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input
+                type="number"
+                name="affordable discount to market value percentage for houses"
+                class="input-response"
+              />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter affordable discount to market value percentage for flats
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input
+                type="number"
+                name="Enter affordable discount to market value percentage for houses"
+                class="input-response"
+              />
+            </div>
+          </div>
+          <div class="container-outer">
+            <div class="container-title">Estimated Build Costs</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average Build cost per Sq.Ft for MARKET Houses
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average Build cost per Sq.Ft for MARKET Houses" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average Build Cost per Sq.Ft for MARKET Flats
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average Build Cost per Sq.Ft for MARKET Flats" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average Build cost per Sq.Ft for AFFORDABLE Houses
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average Build cost per Sq.Ft for AFFORDABLE Houses" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter average Build Cost per Sq.Ft for AFFORDABLE Flats
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="average Build Cost per Sq.Ft for AFFORDABLE Flats" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter Other Developer costs - MARKET UNITS (e.g. sales and marketing, planning, etc) as a percentage of
+                GDV. (default 2%)
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name="Other Developer costs - MARKET UNITS" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter Other Developer costs - AFFORDABLE UNITS (e.g. sales and marketing, planning, etc) as a percentage
+                of GDV. (default 2%)
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name="Other Developer costs - AFFORDABLE UNITS " class="input-response" />
+            </div>
+          </div>
+          <div class="container-outer">
+            <div class="container-title">Developer's Target Margin &amp; Purchaser's Costs</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter Developer's target margin percentage on MARKET UNITS (default 20%)
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name="Developer's target margin percentage on MARKET UNITS" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter Developer's target margin percentage on AFFORDABLE UNITS (default 20%)
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input
+                type="number"
+                name="Developer's target margin percentage on AFFORDABLE UNITS"
+                class="input-response"
+              />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter Purchaser's costs (default 6%)
+                <div class="inner-legend">(%)</div>
+              </div>
+              <input type="number" name="Purchaser's costs " class="input-response" />
+            </div>
+          </div>
+          <div class="container-outer">
+            <div class="container-title">Planning and Servicing Cost Assumptions</div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter estimated infrastructure cost per acre (default £500k per acre)
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="estimated infrastructure cost per acre" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter estimated S106 costs per unit (default £25k per unit)
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="estimated S106 costs per unit" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter estimated Total CIL costs (default ZERO if not entered)
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name="estimated Total CIL costs" class="input-response" />
+            </div>
+            <div class="inner-container">
+              <div class="inner-question">
+                Enter estimated planning costs (default 2.5% of total infrastructure costs)
+                <div class="inner-legend">(#)</div>
+              </div>
+              <input type="number" name=" estimated planning costs" class="input-response" />
+            </div>
+          </div>
+          <button class="submit-button">SUBMIT</button>
         </div>
-        
-        <div class="container-outer">
-          <div class="container-title">Unit Sizes and Coverage</div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-house-size">Enter average size (NIA) Sq Ft for MARKET Houses</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="market-house-size" name="market-house-size" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-flat-size">Enter average size (NIA) Sq Ft for MARKET Flats</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="market-flat-size" name="market-flat-size" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-house-size">Enter average size (NIA) Sq Ft for AFFORDABLE Houses</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="affordable-house-size" name="affordable-house-size" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-flat-size">Enter average size (NIA) Sq Ft for AFFORDABLE Flats</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="affordable-flat-size" name="affordable-flat-size" class="input-response">
-          </div>
-        </div>
-        
-        <div class="container-outer">
-          <div class="container-title">Estimated Sales Values</div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="house-price">Enter average sales price per Sq.Ft for Houses</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="house-price" name="house-price" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="flat-price">Enter average sales price per Sq.Ft for Flats</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="flat-price" name="flat-price" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-house-discount">Enter affordable discount to market value percentage for houses</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="affordable-house-discount" name="affordable-house-discount" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-flat-discount">Enter affordable discount to market value percentage for flats</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="affordable-flat-discount" name="affordable-flat-discount" class="input-response">
-          </div>
-        </div>
-        
-        <div class="container-outer">
-          <div class="container-title">Estimated Build Costs</div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-house-build-cost">Enter average Build cost per Sq.Ft for MARKET Houses</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="market-house-build-cost" name="market-house-build-cost" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-flat-build-cost">Enter average Build Cost per Sq.Ft for MARKET Flats</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="market-flat-build-cost" name="market-flat-build-cost" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-house-build-cost">Enter average Build cost per Sq.Ft for AFFORDABLE Houses</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="affordable-house-build-cost" name="affordable-house-build-cost" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-flat-build-cost">Enter average Build Cost per Sq.Ft for AFFORDABLE Flats</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="affordable-flat-build-cost" name="affordable-flat-build-cost" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-units-dev-costs">Enter Other Developer costs - MARKET UNITS (e.g. sales and marketing, planning, etc) as a percentage of GDV. (default 2%)</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="market-units-dev-costs" name="market-units-dev-costs" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-units-dev-costs">Enter Other Developer costs - AFFORDABLE UNITS (e.g. sales and marketing, planning, etc) as a percentage of GDV. (default 2%)</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="affordable-units-dev-costs" name="affordable-units-dev-costs" class="input-response">
-          </div>
-        </div>
-        
-        <div class="container-outer">
-          <div class="container-title">Developer's Target Margin &amp; Purchaser's Costs</div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="market-units-margin">Enter Developer's target margin percentage on MARKET UNITS (default 20%)</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="market-units-margin" name="market-units-margin" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="affordable-units-margin">Enter Developer's target margin percentage on AFFORDABLE UNITS (default 20%)</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="affordable-units-margin" name="affordable-units-margin" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="purchaser-costs">Enter Purchaser's costs (default 6%)</label>
-              <div class="inner-legend">(%)</div>
-            </div>
-            <input type="number" id="purchaser-costs" name="purchaser-costs" class="input-response">
-          </div>
-        </div>
-        
-        <div class="container-outer">
-          <div class="container-title">Planning and Servicing Cost Assumptions</div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="infrastructure-cost">Enter estimated infrastructure cost per acre (default £500k per acre)</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="infrastructure-cost" name="infrastructure-cost" class="input-response">
-          </div>
-          
-          <div class="inner-container">
-            <div class="inner-question">
-              <label for="s106-costs">Enter estimated S106 costs per unit (default £25k per unit)</label>
-              <div class="inner-legend">(#)</div>
-            </div>
-            <input type="number" id="s106-costs" name="s106-costs" class="input-response">
-          </div>
-        </div>
-        
-        <button type="submit" id="submit-button"> Submit</button>
-      
       </div>
-    </div>
-  </form>
+    </form>
 
+    <script>
+      const form = document.getElementById('myForm');
 
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        console.log('Hello World');
+        var formData = new FormData(e.target);
 
-
-
-  <script>
-
-
-const form = document.getElementById("myForm");
-
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  console.log('Hello World');
-  var formData = new FormData(e.target);
-
-  for (var vals of formData){
- console.log(vals[0]+ ', ' + vals[1]); 
-}
-
-});
-
-
-
-
-  </script>
-  
-</body>
+        for (var vals of formData) {
+          console.log(vals[0] + ', ' + vals[1]);
+        }
+      });
+    </script>
+  </body>
 </html>
