@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="root">
-      <form id="myForm">
+    <form id="myForm">
       <div class="main-container">
           <div class="container-outer">
             <div class="container-title">Units and Acres</div>
@@ -28,7 +28,7 @@
               <input type="number" name="percentage of affordable units?" class="input-response" />
             </div>
             <div class="inner-container">
-              <div class="inner-question">
+              <div class=  "inner-question">
                 What percentage of market units are flats?
                 <div class="inner-legend">(%)</div>
               </div>
@@ -224,8 +224,8 @@
             </div>
           </div>
           <button class="submit-button">SUBMIT</button>
-        </div>
-    </form>
+        </form>
+      </div>
     </body>
     <script>
       const form = document.getElementById('myForm');
@@ -233,18 +233,40 @@
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        console.log('Hello World');
         let formData = new FormData(e.target);
         console.log(formData);
 
         for (var vals of formData) {
-         // console.log(vals[0] + ', ' + vals[1]);
           formResults[vals[0]] = vals[1]
         }
+
 
         console.log(formResults);
         console.log(formResults['total cil']);
 
       });
     </script>
+
+    <script>
+      //assumptions
+
+      let market = {}
+      let affordable = {}
+      let total = {}
+
+      let fields = ['ruhash']
+
+
+
+
+    </script>
+
+
+<script>
+          let residualServicedTotal = {}
+        let residualServicedUnit = {}
+        let unservicedLandTotal = {}
+        let unservicedLandUnit = {}
+
+</script>
 </html>
