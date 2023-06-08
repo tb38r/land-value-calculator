@@ -1,0 +1,75 @@
+Other costs market units
+: 
+""
+"Purchaser costs "
+: 
+"6"
+affordable discount for flats
+: 
+""
+affordable discount for houses
+: 
+""
+average build cost for affordable flats
+: 
+""
+average build cost for affordable houses
+: 
+""
+average cost for market flats
+: 
+""
+average cost for market houses
+: 
+""
+average sales per sqft flats
+: 
+""
+average sales price per sqft houses
+: 
+""
+average size sqft for affordable flats
+: 
+""
+average size sqft for affordable houses
+: 
+""
+average size sqft for market flats
+: 
+""
+average size sqft for market houses
+: 
+""
+estimated S106 costs
+: 
+"25000"
+estimated infrastructure cost
+: 
+"500000"
+estimated planning costs
+: 
+"2.5"
+margin on market units
+: 
+"20"
+margin on percentage affordable units
+: 
+"20"
+net developable acres
+: 
+""
+other costs affordable units
+: 
+""
+percentage of affordable units?
+: 
+""
+percentage of market units flats
+: 
+""
+total cil
+: 
+"0"
+total number of residential units
+: 
+""
