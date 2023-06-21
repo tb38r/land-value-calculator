@@ -100,12 +100,11 @@ input {
   justify-content: center;
   position: fixed;
   height: 300px;
-  width: 500px;
+  width: 600px;
   border-radius: 20px;
 }
 
-
-.result-body{
+.result-body {
   background-color: white;
   border-radius: 19px;
   width: 100%;
@@ -117,46 +116,43 @@ input {
   align-items: center;
 }
 
-
 .table {
   display: grid;
-  grid-template-columns: 60% 1fr 1fr 1fr; 
+  grid-template-columns: 60% 1fr 1fr 1fr;
   width: 99%;
   padding: 10px;
 }
 
 .table > div {
-margin: 2px;
-background: powderblue;
-padding: 5px;
+  margin: 2px;
+  background: powderblue;
+  padding: 5px;
 }
 
-.back-button{
+.back-button {
   background-color: blue;
   width: 99%;
-  height:30px;
-    display: flex;
+  height: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   border-radius: 10px;
-  text-transform:uppercase;
-
+  text-transform: uppercase;
 }
 
-#empty-row{
-background: white;
+#empty-cell {
+  background: white;
 }
 
-#table-header{
+#table-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#table-row-title{
+#table-row-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
