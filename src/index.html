@@ -235,7 +235,7 @@
               <input type="number" name="estimated planning costs" class="input-response" value=1000000  />
             </div>
           </div>
-          <button class="submit-button">SUBMIT</button>
+          <button class="submit-button">GET RESULTS!</button>
         </form>
 
           
@@ -245,17 +245,23 @@
         <div class="result">
           <div class="result-body">
             <div class="table">
-              <div>Row 1</div>
-              <div>1.00</div>
-              <div>Description</div>
+              <div id="empty-row" ></div>
+              <div id= "table-header">Totals</div>
+              <div>per Acre</div>
+              <div>per Unit</div>
+
               
-                <div>Row 2</div>
-              <div>2.00</div>
-              <div>1st Row</div>
+              <div id="table-row-title">SERVICED</div>
+              <div id="serviced-total"></div>
+              <div id="serviced-acre"></div>
+              <div id= "serviced-unit"></div>
+
               
-                <div>Row 3</div>
-              <div>3.00</div>
-              <div>2nd Row</div>
+                <div id="table-row-title">UNSERVICED</div>
+                <div id="unserviced-total"></div>
+                <div id="unserviced-acre"></div>
+                <div id= "unserviced-unit"></div>
+
               
              </div>
 
@@ -396,6 +402,25 @@ let totalUnservicedLandValCost = Math.ceil(totalUnserviced['Estimated Unserviced
 let totalUnservicedPerAcre = Math.ceil(totalUnservicedLandValCost/formResults['net developable acres'])
 let totalUnservicedPerUnit = Math.ceil(totalUnservicedLandValCost/formResults['total number of residential units'])
 
+const servicedTotal = document.querySelector("#serviced-total")
+const unservicedTotal = document.querySelector("#unserviced-total")
+const servicedAcre = document.querySelector("#serviced-acre")
+const unservicedAcre = document.querySelector("#unserviced-acre")
+const servicedUnit= document.querySelector("#serviced-unit")
+const unservicedUnit= document.querySelector("#unserviced-unit")
+
+
+
+
+
+servicedTotal.innerHTML = totalEstimatedServiceLandValuePostPurchasersCosts.toLocaleString('en', {useGrouping:true})
+unservicedTotal.innerHTML = totalUnservicedLandValCost.toLocaleString('en', {useGrouping:true})
+servicedAcre.innerHTML = totalServicePerAcre.toLocaleString('en', {useGrouping:true})
+unservicedAcre.innerHTML = totalUnservicedPerAcre.toLocaleString('en', {useGrouping:true})
+servicedUnit.innerHTML = totalServicePerUnit.toLocaleString('en', {useGrouping:true})
+unservicedUnit.innerHTML = totalUnservicedPerUnit.toLocaleString('en', {useGrouping:true})
+
+
 
     //top row
     console.log('totalEstimatedServiceLandValuePostPurchasersCosts',totalEstimatedServiceLandValuePostPurchasersCosts);
@@ -416,9 +441,8 @@ let totalUnservicedPerUnit = Math.ceil(totalUnservicedLandValCost/formResults['t
 
 <script>
 const goback = ()=>{
-  console.log('went back ');
   form.style.display = 'flex'
-        tableDiv.style.display = 'none'
+  tableDiv.style.display = 'none'
 }
   
 </script>
