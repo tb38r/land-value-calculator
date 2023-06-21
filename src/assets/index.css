@@ -39,7 +39,7 @@ input {
 }
 
 #myForm {
-  display: none;
+  display: flex;
   justify-content: center;
 }
 
@@ -96,7 +96,7 @@ input {
 }
 
 .result {
-  display: flex;
+  display: none;
   justify-content: center;
   position: fixed;
   height: 300px;
