@@ -18,18 +18,17 @@
 }
 
 input {
+  
   background-color: white;
   border-radius: 25px;
   height: 18px;
   color: black;
-  width: 60px;
+  width: 200px;
   text-align: center;
   border-color: transparent;
 }
 .main-container {
-  width: 40%;
-  height: 700px;
-  background-color: white;
+  background-color: #004b7a;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,11 +39,12 @@ input {
 
 #myForm {
   display: flex;
+  height: 800px;
   justify-content: center;
 }
 
 .submit-button {
-  background-color: black;
+  background-color:#00c7b3; ;
   color: white;
   width: 99%;
   height: 50px;
@@ -63,7 +63,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: blue;
+  background-color: #192643;
   border-radius: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -98,14 +98,14 @@ input {
 .result {
   display: none;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   height: 300px;
-  width: 600px;
+  width: 100%;
   border-radius: 20px;
 }
 
 .result-body {
-  background-color: white;
+  background-color: #004b7a;
   border-radius: 19px;
   width: 100%;
   margin: 10px;
@@ -115,24 +115,23 @@ input {
   justify-content: center;
   align-items: center;
 }
-
 .table {
   display: grid;
-  grid-template-columns: 60% 1fr 1fr 1fr;
+  grid-template-columns: 33% 1fr 1fr ;
   width: 99%;
   padding: 10px;
 }
 
 .table > div {
   margin: 2px;
-  background: powderblue;
+  background: #192643;
   padding: 5px;
 }
 
 .back-button {
-  background-color: blue;
+  background-color: #00c7b3;
   width: 99%;
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +141,7 @@ input {
 }
 
 #empty-cell {
-  background: white;
+  background: #004b7a;
 }
 
 #table-header {
@@ -153,6 +152,5 @@ input {
 
 #table-row-title {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
 }

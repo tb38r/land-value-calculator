@@ -56,28 +56,28 @@
             <div class="container-title">Unit Sizes and Coverage</div>
             <div class="inner-container">
               <div class="inner-question">
-                Enter average size (NIA) Sq Ft for MARKET Houses
+                Enter average unit size Sq Ft for MARKET Houses
                 <div class="inner-legend">(#)</div>
               </div>
               <input type="number" name="average size sqft for market houses" class="input-response" value= 1000 />
             </div>
             <div class="inner-container">
               <div class="inner-question">
-                Enter average size (NIA) Sq Ft for MARKET Flats
+                Enter average unit size Sq Ft for MARKET Flats
                 <div class="inner-legend">(#)</div>
               </div>
               <input type="number" name="average size sqft for market flats" class="input-response" value= 700 />
             </div>
             <div class="inner-container">
               <div class="inner-question">
-                Enter average size (NIA) Sq Ft for AFFORDABLE Houses
+                Enter average unit size Sq Ft for AFFORDABLE Houses
                 <div class="inner-legend">(#)</div>
               </div>
-              <input type="number" name="average size sqft for affordable houses" class="input-response" value= 900 />
+              <input type="number" name="average size sqft for affordable houses" class="input-response"  required/>
             </div>
             <div class="inner-container">
               <div class="inner-question">
-                Enter average size (NIA) Sq Ft for AFFORDABLE Flats
+                Enter average unit size Sq Ft for AFFORDABLE Flats
                 <div class="inner-legend">(#)</div>
               </div>
               <input type="number" name="average size sqft for affordable flats" class="input-response" value= 650 />
@@ -246,20 +246,21 @@
           <div class="result-body">
             <div class="table">
               <div id="empty-cell" ></div>
-              <div id= "table-header">Totals</div>
-              <div id= "table-header">per Acre</div>
-              <div id= "table-header">per Unit</div>
+              <div id= "table-header">SERVICED</div>
+              <div id= "table-header">UNSERVICED</div>
+
 
               
-              <div id="table-row-title">SERVICED</div>
+              <div id="table-row-title">Total (£)</div>
               <div id="serviced-total"></div>
-              <div id="serviced-acre"></div>
-              <div id= "serviced-unit"></div>
+              <div id="unserviced-total"></div>
 
-              
-                <div id="table-row-title">UNSERVICED</div>
-                <div id="unserviced-total"></div>
-                <div id="unserviced-acre"></div>
+              <div id="table-row-title">per Acre (£)</div>
+              <div id="serviced-acre"></div>
+              <div id="unserviced-acre"></div>
+
+              <div id="table-row-title">per Unit (£)</div>
+              <div id= "serviced-unit"></div>
                 <div id= "unserviced-unit"></div>
 
               
@@ -269,7 +270,6 @@
 
           </div>
          </div>
-    </div>
 
 
 
